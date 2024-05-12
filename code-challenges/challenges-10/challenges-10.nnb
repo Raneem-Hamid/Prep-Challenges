@@ -1,0 +1,79 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "'use strict';\r\n\r\nconst fs = require('fs');\r\n\r\nprocess.stdin.resume();\r\nprocess.stdin.setEncoding('utf-8');\r\n\r\nlet inputString = '';\r\nlet currentLine = 0;\r\n\r\nprocess.stdin.on('data', function(inputStdin) {\r\n    inputString += inputStdin;\r\n});\r\n\r\nprocess.stdin.on('end', function() {\r\n    inputString = inputString.split('\\n');\r\n\r\n    main();\r\n});\r\n\r\nfunction readLine() {\r\n    return inputString[currentLine++];\r\n}\r\n\r\n/*\r\n * Complete the 'birthdayCakeCandles' function below.\r\n *\r\n * The function is expected to return an INTEGER.\r\n * The function accepts INTEGER_ARRAY candles as parameter.\r\n */\r\n\r\nfunction birthdayCakeCandles(candles) {\r\n    // Find the maximum height\r\n    const maxHeight = Math.max(...candles);\r\n    // Count how many times the maximum height occurs\r\n    const tallestCount = candles.filter(height => height === maxHeight).length;\r\n    return tallestCount;\r\n}\r\n\r\nfunction main() {\r\n    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);\r\n\r\n    const candlesCount = parseInt(readLine().trim(), 10);\r\n\r\n    const candles = readLine().replace(/\\s+$/g, '').split(' ').map(candlesTemp => parseInt(candlesTemp, 10));\r\n\r\n    const result = birthdayCakeCandles(candles);\r\n\r\n    ws.write(result + '\\n');\r\n\r\n    ws.end();\r\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Compare The Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
