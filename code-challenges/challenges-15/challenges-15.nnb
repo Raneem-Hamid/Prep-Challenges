@@ -26,7 +26,19 @@
             "source": [
                 "function equalizeArray(arr) {\r\n    let mostFreqNum = 0;\r\n    for (let i = 0; i < arr.length; i++) {\r\n        let count = 0; \r\n        for (let j = 0; j < arr.length; j++) {\r\n            if (arr[i] === arr[j]) {\r\n                count++; \r\n            }\r\n        }\r\n        if (count > mostFreqNum) {\r\n            mostFreqNum = count;\r\n        }\r\n    }\r\n    return arr.length - mostFreqNum;\r\n}"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
