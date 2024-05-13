@@ -30,6 +30,8 @@ const reverseString = (string) => {
 
 const detectFace = (arr) => {
     return arr.filter(str => str.includes('^_^'));
+
+    
 }
 // -------------------------------------------------------------------------------------------------------
 
